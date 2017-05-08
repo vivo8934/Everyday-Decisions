@@ -1,5 +1,30 @@
 h1{
+
+  text-align: center;
+}
+.Main{
   margin: auto;
   padding: auto;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   width: 50%;
+   height: 50%;
+   background-color: lightgrey;
+}
+
+.Mybtn{
+
+  padding: auto;
+  height: 30px;
+  width: 80px;
+  border-radius: 10%;
+  background-color: white;
+margin-left: 45%;
+}
+footer{
+  background-color: green;
   text-align: center;
+
 }

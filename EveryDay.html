@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>EveryDay Decisions</title>
-  <link rel="stylesheet" href="EveryDay.css">
-  </head>
-  <body>
-    <h1>Body Mass Index(BMI) Calculator</h1>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Excel To HTML using codebeautify.org</title>
+	<title>EveryDay Decisions</title>
+</head>
+<body>
+	<meta charset="utf-8">
+	<link href="EveryDay.css" rel="stylesheet">
+	<div class="Main">
+		<h1>Body Mass Index(BMI) Calculator</h1>
+		<div class="Inputs">
+			<p><strong>Enter height</strong>: <input id="height" type="text"> <select id="heightunits">
+				<option selected="selected" value="metres">
+					metres
+				</option>
+				<option value="inches">
+					inches
+				</option>
+			</select></p><br>
+			<p><strong>Enter weight</strong>: <input id="weight" type="text"> <select id="weightunits">
+				<option selected="selected" value="kg">
+					kilograms
+				</option>
+				<option value="lb">
+					pounds
+				</option>
+			</select></p><input class="Mybtn" type="button" value="Calculate">
+		</div>
+		<div class="outputs">
+			<h2>Your BMI is: <span id="output">?</span></h2>
+			<h3>This means you are:<span id='comment'></span></h3>
+		</div>
+		<footer>
+			Developed by Mfundo ngqanekana codeX 2017
+		</footer>
+	</div>
+	<script charset="utf-8" src="EveryDay.js">
+	</script>
+</body>
 </html>
