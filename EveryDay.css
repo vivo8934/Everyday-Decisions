@@ -12,6 +12,7 @@ h1{
    width: 50%;
    height: 50%;
    background-color: lightgrey;
+   border-color: 2px solid red;
 }
 
 .Mybtn{
@@ -27,4 +28,8 @@ footer{
   background-color: green;
   text-align: center;
 
+}
+.animated infinite rubberBand{
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 3s;
 }
