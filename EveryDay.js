@@ -5,11 +5,12 @@ var button = document.querySelector('.Mybtn');
 button.addEventListener('click', function(){
 
   var Height = document.querySelector('#height').value
+
   var HeightUnits = document.querySelector('#heightunits').value
   var Weight = document.querySelector('#weight').value
+
   var WeightUnits = document.querySelector('#weightunits').value
 
-alert('vivo');
   if (HeightUnits == "inches") Height /= 39.3700787;
     if (WeightUnits == "lb") Weight /= 2.20462;
    var BMI = Weight / Math.pow(Height, 2);
