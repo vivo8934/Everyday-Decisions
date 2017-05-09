@@ -18,9 +18,10 @@ button.addEventListener('click', function(){
    document.getElementById("output").innerHTML = Math.round(BMI * 100)/100;
   if (BMI < 18.5) document.getElementById("comment").innerHTML = "Underweight";
 
-  if (BMI >= 18.5 && BMI <= 25) document.getElementById("comment").innerHTML = "Normal";
-  if (BMI >= 25 && BMI <= 30) document.getElementById("comment").innerHTML = "Obese";
-   if (BMI > 30) document.getElementById("comment").innerHTML = "Overweight";
+  if (BMI >= 18.5 && BMI <= 24.9) document.getElementById("comment").innerHTML = "Normal Weight";
+  if (BMI >= 25 && BMI <= 29.9) document.getElementById("comment").innerHTML = "Overweight";
+if (BMI >= 30 && BMI <= 39.9) document.getElementById("comment").innerHTML = "Obese";
+   if (BMI > 40) document.getElementById("comment").innerHTML = "Morbidly Obese";
    document.getElementById("comment").value = output;
 
 })
